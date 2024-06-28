@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+body {
+    background: url('hacker-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+    color: #00ff00;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.content-box {
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 15px;
+    padding: 40px 20px;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.7);
+    margin: 20px;
+    animation: slideIn 1s ease-out;
+}
+
+.media {
+    margin: 30px 0;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.media:nth-child(1) {
+    animation-delay: 0.5s;
+}
+
+.media:nth-child(2) {
+    animation-delay: 1s;
+}
+
+.media:nth-child(3) {
+    animation-delay: 1.5s;
+}
+
+.media:nth-child(4) {
+    animation-delay: 2s;
+}
+
+.media h1 {
+    font-family: Monteserat-Bold;
+    margin-top: 15px;
+    font-size: 1.5em;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+    animation-delay: 2.5s;
+}
+
+p {
+    font-family: Monteserat-Medium;
+    margin-top: 15px;
+    font-size: 1.5em;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+    animation-delay: 2.5s;
+}
+
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('backgound.jpg') no-repeat center center fixed;
+    background-size: cover;
+    z-index: -1;
+    opacity: 1;
+}
+
+video, img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5);
+    transition: transform 0.3s ease-in-out;
+}
+
+video:hover, img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .content-box {
+        padding: 20px;
+    }
+    .media {
+        margin: 20px 0;
+    }
+    .media p {
+        font-size: 1em;
+    }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хакерський Стиль</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="background-image"></div>
+    <div class="container">
+        <div class="content-box">
+            <div class="media">
+                <video controls>
+                    <source src="1.mp4" type="video/mp4">
+                </video>
+                 <h1>Базовий набір команд для роботи з гітом. </h1>
+                 <p>git init - пишиться один раз при створенні проекту для ініціалізації<br>
+                    git status - відображає змінені файли<br>
+                    git add . - команда додає до коміту файли, крапка вказує на всі файли<br>
+                    git remote add origin *url* - додає репозиторій origin. *url* - посилання<br>
+                    git commit -m "commit name" - Створює новий коміт з доданих файлів під назваю commit name<br>
+                    git push -u origin develop - пушить все на гітхаб.<br></p>
+            </div>
+            <div class="media">
+                <video controls>
+                    <source src="2.mp4" type="video/mp4">
+                    Ваш браузер не підтримує відтворення відео.
+                </video>
+                <h1>Робота з гілками</h1>
+                 <p>
+                    git clone *url* - Клонує репозиторій. *url* - посилання<br>
+                    git branch - Показує список гілок<br>
+                    git branch branch-name - Створює нову гілку на якій ти будеш працювати<br>
+                    git checkout branch-name - переход на гілку<br>
+                    Ім'я гілки слід вибирати відповідно до своєї таски.<br>
+                    Перед початком роботи виконати git pull - щоб оновити зміни з віддаленого репа у себе локально<br>
+                    </p>
+            </div>
+            <div class="media">
+                <video controls>
+                    <source src="3.mp4" type="video/mp4">
+                    Ваш браузер не підтримує відтворення відео.
+                </video>
+                <h1>Створення пул реквесту</h1>
+                 <p>Після того як пушиш свій проект потрібно зробити пул реквест.<br>
+                    Учасники проекту перевірять код і або залишать коментарі стосовно того що підправити,
+                    або затвердять проект і з'єднають його з головною гілкою.</p>
+            </div>
+            <div class="media">
+                <img src="3.jpg" alt="Фото" />
+                <h1>Приклад того як краще називати коміти.</h1>
+                <p> Назва повинна описувати головні речі які ти зробив в коміті. На англійській</p>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
